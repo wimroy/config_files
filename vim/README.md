@@ -6,3 +6,4 @@ The following bundles are currently installed:
 - nerdtree
 - vim-airline
 - vim-colors-solarized
+- vim-fugitive
