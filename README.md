@@ -16,4 +16,7 @@ Tmux
 - ln -s /path/to/tmux/tmux.conf    .tmux.conf
 
 
+Top
+- cd ~
+- ln -s /path/to/toprc    .toprc
 
