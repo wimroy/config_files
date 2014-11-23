@@ -73,7 +73,7 @@ endif
 " ===== Python-mode =====
 map <C-K> :!clear; python %<CR> " Run Python scripts from within the editor
 
-set nofoldenable
+"""set nofoldenable
 " Activate rope
 " Keys:
 " K             Show python docs
@@ -114,8 +114,7 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
-" Don't autofold code
-let g:pymode_folding = 0
+let g:pymode_folding = 1
 
 let g:pymode_trim_whitespaces = 1
 let g:pymode_run = 1
