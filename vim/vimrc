@@ -73,7 +73,7 @@ endif
 " ===== Python-mode =====
 map <C-K> :!clear; python %<CR> " Run Python scripts from within the editor
 
-"""set nofoldenable
+set foldenable
 " Activate rope
 " Keys:
 " K             Show python docs
