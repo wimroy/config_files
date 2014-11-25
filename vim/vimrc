@@ -6,6 +6,7 @@ call pathogen#helptags()
 
 set hidden
 set number
+set relativenumber
 set nowrap
 set backspace=indent,eol,start
 set softtabstop=4
@@ -16,6 +17,10 @@ set ignorecase
 set smartcase
 set hlsearch!   " Turn off highlighting of searched term by default
 
+set colorcolumn=80
+set cursorline
+set foldenable
+
 filetype plugin on
 filetype indent on
 
@@ -23,8 +28,6 @@ set title
 set laststatus=2
 set nosmd      " No showmode
 set noruler    " No ruler
-
-
 
 set scroll=5    " Set lines to scroll with ^-U and ^-D
 "set mouse=a
@@ -36,20 +39,25 @@ set scroll=5    " Set lines to scroll with ^-U and ^-D
 "map <right> <nop>
 
 
+" ===== Function Key Bindings =====
+nnoremap <silent> <F2> :set number!<CR> " Toggle line numbers
+" nmap <silent> <F6> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
+nnoremap <silent> <F3> :set relativenumber!<CR> " Map <F4 to toggle relative numbers
+nnoremap <silent> <F4> :set hlsearch!<CR> " Map <F3> to toggle highlighting of searched term
+nnoremap <silent> <F5> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+nnoremap <silent> <F9> :set invpaste paste?<CR> " Toggle paste mode for code that's already indented
+set pastetoggle=<F9>
 
+" Edit and source vimrc on the fly
+nmap <leader>ev :vsplit $MYVIMRC<CR>
+nmap <leader>sv :source $MYVIMRC<CR>
 
 " Buffer navigation
 nnoremap <C-Left> :bprevious<CR>
 nnoremap <C-Right> :bnext<CR>
 
-
-" ===== Function Key Bindings =====
-nnoremap <silent> <F2> :set nonumber!<CR> " Toggle line numbers
-nnoremap <silent> <F3> :set hlsearch!<CR> " Map <F3> to toggle highlighting of searched term
-nnoremap <silent> <F4> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
-nnoremap <silent> <F9> :set invpaste paste?<CR> " Toggle paste mode for code that's already indented
-set pastetoggle=<F9>
-"set showmode
+" ===== Python-mode =====
+map <C-K> :!clear; python %<CR> " Run Python scripts from within the editor
 
 
 " ===== Colors =====
@@ -57,7 +65,7 @@ highlight LineNr term=NONE
 highlight Comment  term=italic cterm=italic ctermfg=10 gui=italic guifg=#303030
 if has('gui_running')
     let g:solarized_termcolors=256
-    set background=dark
+    set background=light
     colorscheme solarized
 else
     syntax on
@@ -68,12 +76,6 @@ else
 endif
 
 
-
-
-" ===== Python-mode =====
-map <C-K> :!clear; python %<CR> " Run Python scripts from within the editor
-
-set foldenable
 " Activate rope
 " Keys:
 " K             Show python docs
@@ -143,7 +145,6 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-
 
 
 " Awesome fix from: http://superuser.com/a/402084
