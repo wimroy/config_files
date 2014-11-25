@@ -7,4 +7,4 @@ The following bundles are currently installed:
 - vim-airline
 - vim-colors-solarized
 - vim-fugitive
-- command-t
+- command-t (Be sure to read the installation manual. It needs ruby and ruby-devel to be installed.)
