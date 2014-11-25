@@ -7,3 +7,4 @@ The following bundles are currently installed:
 - vim-airline
 - vim-colors-solarized
 - vim-fugitive
+- command-t
