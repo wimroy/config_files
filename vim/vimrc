@@ -49,7 +49,8 @@ nnoremap <silent> <F9> :set invpaste paste?<CR> " Toggle paste mode for code tha
 set pastetoggle=<F9>
 
 " Edit and source vimrc on the fly
-nmap <leader>ev :vsplit $MYVIMRC<CR>
+" nmap <leader>ev :vsplit $MYVIMRC<CR>
+nmap <leader>ev :e $MYVIMRC<CR>
 nmap <leader>sv :source $MYVIMRC<CR>
 
 " Buffer navigation
