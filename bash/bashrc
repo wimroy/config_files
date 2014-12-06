@@ -1,0 +1,30 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+#######################################################
+# Defined by ME
+#
+
+# Prompt
+export PS1='\u@\h:\W$ '
+
+# .bash_history control variables
+export HISTFILESIZE=1000000000
+export HISTSIZE=100000000
+export HISTCONTROL=ignoreboth
+
+# To enable exiting the shell with Ctrl-D
+export ignoreeof=0
+
+export now='date +%m%d%Y_%H%M%S'
+
+export EDITOR=/usr/bin/vim
+
+# Disable write from being used on my terminals
+mesg n
+
