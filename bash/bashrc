@@ -31,7 +31,11 @@ mesg n
 # Homebrew package install path
 export PATH=/usr/local/bin:$PATH
 
+# Macports
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
 # Python Virtualenv
 alias virtual='source `which virtualenvwrapper.sh`'
+
 
 

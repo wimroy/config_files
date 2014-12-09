@@ -7,12 +7,3 @@ fi
 
 # User specific environment and startup programs
 
-
-##
-# Your previous /Users/wimroy/.bash_profile file was backed up as /Users/wimroy/.bash_profile.macports-saved_2014-12-06_at_14:40:46
-##
-
-# MacPorts Installer addition on 2014-12-06_at_14:40:46: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
