@@ -21,21 +21,16 @@ export HISTCONTROL=ignoreboth
 # To enable exiting the shell with Ctrl-D
 export ignoreeof=2
 
-export now='date +%m%d%Y_%H%M%S'
+alias now='date +%m%d%Y_%H%M%S'
 
 export EDITOR=/usr/bin/vim
 
 # Disable write from being used on my terminals
-mesg n
-
-# Homebrew package install path
-export PATH=/usr/local/bin:$PATH
-
-# Macports
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+[[ $- == *i* ]] && mesg n
 
 # Python Virtualenv
 alias virtual='source `which virtualenvwrapper.sh`'
 
-
+# Source OS specific configuration
+source .bashrc_mac
 
