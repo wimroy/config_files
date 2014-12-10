@@ -45,7 +45,9 @@ nnoremap <silent> <F2> :set number!<CR> " Toggle line numbers
 nnoremap <silent> <F3> :set relativenumber!<CR> " Map <F4 to toggle relative numbers
 nnoremap <silent> <F4> :set hlsearch!<CR> " Map <F3> to toggle highlighting of searched term
 nnoremap <silent> <F5> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+nnoremap <silent> <F7> :PymodeLintAuto<CR>
 nnoremap <silent> <F9> :set invpaste paste?<CR> " Toggle paste mode for code that's already indented
+
 set pastetoggle=<F9>
 
 " Edit and source vimrc on the fly
