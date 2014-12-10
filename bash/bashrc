@@ -32,5 +32,5 @@ export EDITOR=/usr/bin/vim
 alias virtual='source `which virtualenvwrapper.sh`'
 
 # Source OS specific configuration
-source .bashrc_mac
+source ~/.bashrc_mac
 

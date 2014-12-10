@@ -1,10 +1,11 @@
 # Mac-specific bash configuration
 
-# Homebrew package install path
-export PATH=/usr/local/bin:$PATH                                                
                                                                                 
 # Macports                                                                      
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+# Homebrew package install path
+export PATH=/usr/local/bin:$PATH 
 
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
