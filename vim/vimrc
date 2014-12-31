@@ -18,8 +18,8 @@ set smartcase
 set hlsearch!   " Turn off highlighting of searched term by default
 
 set colorcolumn=80
-set cursorline
-set foldenable
+"set cursorline
+"set foldenable
 
 filetype plugin on
 filetype indent on
@@ -46,9 +46,12 @@ nnoremap <silent> <F3> :set relativenumber!<CR> " Map <F4 to toggle relative num
 nnoremap <silent> <F4> :set hlsearch!<CR> " Map <F3> to toggle highlighting of searched term
 nnoremap <silent> <F5> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
 nnoremap <silent> <F7> :PymodeLintAuto<CR>
-nnoremap <silent> <F9> :set invpaste paste?<CR> " Toggle paste mode for code that's already indented
+nnoremap <silent> <F8> :set invpaste paste?<CR> " Toggle paste mode for code that's already indented
+set pastetoggle=<F8>
 
-set pastetoggle=<F9>
+" Buffer navigation
+nnoremap <F9> :bprevious<CR>
+nnoremap <F10> :bnext<CR>
 
 " Edit and source vimrc on the fly
 " nmap <leader>ev :vsplit $MYVIMRC<CR>
@@ -56,8 +59,8 @@ nmap <leader>ev :e $MYVIMRC<CR>
 nmap <leader>sv :source $MYVIMRC<CR>
 
 " Buffer navigation
-nnoremap <C-Left> :bprevious<CR>
-nnoremap <C-Right> :bnext<CR>
+nnoremap <C-S-Left> :bprevious<CR>
+nnoremap <C-S-Right> :bnext<CR>
 
 " ===== Python-mode =====
 map <C-K> :!clear; python %<CR> " Run Python scripts from within the editor
@@ -119,7 +122,7 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
-let g:pymode_folding = 1
+let g:pymode_folding = 0
 
 let g:pymode_trim_whitespaces = 1
 let g:pymode_run = 1
