@@ -16,3 +16,4 @@ export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
 # Use MAMP's php
 export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
+export PATH=/Applications/MAMP/Library/bin/:$PATH
