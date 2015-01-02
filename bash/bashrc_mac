@@ -1,7 +1,8 @@
 # Mac-specific bash configuration
 
 alias tclsh='rlwrap -c tclsh'
-                                                                                
+alias mampmysql='/Applications/MAMP/Library/bin/mysql'
+
 # Macports                                                                      
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
@@ -12,3 +13,4 @@ export PATH=/usr/local/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$HOME/Library/Android/sdk/tools:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
