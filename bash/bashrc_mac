@@ -3,7 +3,7 @@
 alias tclsh='rlwrap -c tclsh'
 alias mampmysql='/Applications/MAMP/Library/bin/mysql'
 
-# Macports                                                                      
+# Macports
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Homebrew package install path
@@ -14,3 +14,5 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$HOME/Library/Android/sdk/tools:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
+# Use MAMP's php
+export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
