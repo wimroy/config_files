@@ -1,11 +1,17 @@
 
 The following bundles are currently installed:
 - pathogen
+
 - python-mode
 - syntastic
+- vim-fugitive
+
 - nerdtree
+- ctrlp (Does similar things as nerdtree. Will decide on one or the other later.)
+
+- nerdcommenter
+- vim-commentary
+
 - vim-airline
 - vim-colors-solarized
-- vim-fugitive
-- command-t (Be sure to read the installation manual. It needs ruby and ruby-devel to be installed.)
-- ctrlp (Does similar things as command-t. will decide on one or the other later.)
+
