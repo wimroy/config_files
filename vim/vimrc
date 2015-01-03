@@ -30,7 +30,7 @@ set nosmd      " No showmode
 set noruler    " No ruler
 
 set scroll=5    " Set lines to scroll with ^-U and ^-D
-"set mouse=a
+" set mouse=a
 
 " ===== Disable arrow keys for navigation in Normal mode =====
 "map <up> <nop>
