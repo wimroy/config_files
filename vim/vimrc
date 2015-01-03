@@ -3,7 +3,6 @@ execute pathogen#infect()
 call pathogen#infect()
 call pathogen#helptags()
 
-
 set hidden
 set number
 set relativenumber
@@ -16,6 +15,7 @@ set smartindent
 set ignorecase
 set smartcase
 set hlsearch!   " Turn off highlighting of searched term by default
+syntax on
 
 set colorcolumn=80
 "set cursorline
@@ -30,7 +30,7 @@ set nosmd      " No showmode
 set noruler    " No ruler
 
 set scroll=5    " Set lines to scroll with ^-U and ^-D
-" set mouse=a
+set mouse=a
 
 " ===== Disable arrow keys for navigation in Normal mode =====
 "map <up> <nop>
@@ -71,10 +71,10 @@ highlight LineNr term=NONE
 highlight Comment  term=italic cterm=italic ctermfg=10 gui=italic guifg=#303030
 if has('gui_running')
     let g:solarized_termcolors=256
-    set background=light
+    "set background=light
+    set background=dark
     colorscheme solarized
 else
-    syntax on
     set t_Co=16
     set background=dark
     let g:solarized_termtrans=1
