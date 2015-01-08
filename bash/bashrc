@@ -13,6 +13,15 @@ fi
 # Prompt
 export PS1='\u@\h:\W$ '
 
+alias ll='ls -ltrh'
+alias lla='ls -ltrha'
+alias df='df -h'
+alias dw='du -sh .'
+alias ds='du -sh *'
+
+# Kill all background jobs
+alias kbg='kill -9 `jobs -p` > /dev/null 2>&1'
+
 # .bash_history control variables
 export HISTFILESIZE=1000000000
 export HISTSIZE=100000000
