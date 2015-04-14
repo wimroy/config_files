@@ -10,11 +10,10 @@ fi
 # Defined by ME
 #
 
-# Prompt
-export PS1='\u@\h:\W$ '
 
 alias ll='ls -ltrh'
 alias lla='ls -ltrha'
+alias la='ls -a'
 alias df='df -h'
 alias dw='du -sh .'
 alias ds='du -sh *'
@@ -43,3 +42,18 @@ alias virtual='source `which virtualenvwrapper.sh`'
 # Source OS specific configuration
 source ~/.bashrc_mac
 
+
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWCOLORHINTS="yes"
+GIT_PS1_SHOWDIRTYSTATE=true
+
+source ~/.git-prompt.sh
+
+# Prompt
+export PS1='\u@\h:\W$ '
+
+export PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ ";'
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi

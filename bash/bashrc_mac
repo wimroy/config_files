@@ -13,6 +13,7 @@ export PATH=/usr/local/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$HOME/Library/Android/sdk/tools:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+export NDKROOT=$HOME/Library/Android/android-ndk-r10d
 
 # Use MAMP's php and mysql
 #export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
