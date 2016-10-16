@@ -57,3 +57,10 @@ export PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ ";'
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"
+
+
+export PATH=$PATH:$HOME/Downloads/mongodb/bin
+

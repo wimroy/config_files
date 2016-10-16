@@ -14,7 +14,16 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$HOME/Library/Android/sdk/tools:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 export NDKROOT=$HOME/Library/Android/android-ndk-r10d
+export ANDROID_NDK_HOME=$HOME/Library/Android/android-ndk-r10d
 
 # Use MAMP's php and mysql
 #export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
 #export PATH=/Applications/MAMP/Library/bin/:$PATH
+
+# Java - 1.8.0_60
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home
+
+# Scala
+export PATH=$PATH:$HOME/Applications/scala/bin
+
